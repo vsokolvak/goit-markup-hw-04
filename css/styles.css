@@ -240,11 +240,6 @@ ul {
     background: #F4F4FD;
 }
 
-.benefits-icon {
-    width: 64px;
-    height: 64px;
-}
-
 .benefits-content-title {
     color: #2E2F42;
     font-size: 20px;
@@ -295,6 +290,10 @@ ul {
 
 .team-list-info {
     padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
 }
 
 .team-list-title {
@@ -305,7 +304,6 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    margin-bottom: 8px;
 }
 
 .team-list-text {
@@ -314,6 +312,23 @@ ul {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
+}
+
+.team-icon-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.team-icon-bg {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio {
