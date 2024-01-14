@@ -316,7 +316,7 @@ ul {
 
 .team-icon-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -337,6 +337,16 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.team-icon-href:hover,
+.team-icon-href:focus {
+    background-color: #404bbf;
+}
+
+.team-icon {
+    fill: #f4f4fd;
 }
 
 .portfolio {
