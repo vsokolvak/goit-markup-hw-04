@@ -442,7 +442,11 @@ ul {
 
 .pagefooter-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+
+.footer-info {
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -503,8 +507,7 @@ ul {
 }
 
 .footer-icon {
-    width: 24px;
-    height: 24px;
+    fill: #f4f4fd;
 }
     
 .footer-icon-href:hover,
