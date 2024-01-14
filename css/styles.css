@@ -3,6 +3,8 @@ body {
     font-weight: 400;
     color: #434455;
     background-color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -111,22 +113,17 @@ ul {
     color: #404bbf;
 }
 
-.header-nav-href::after {
+.header-active-href::after {
     content: '';
     display: block;
     position: absolute;
     left: 0;
     bottom: -1px;
     width: 100%;
-    transform: scale(0);
     height: 4px;
     border-radius: 2px;
     background-color: #404BBF;
     transition: transform 300ms ease;
-}
-
-.header-nav-href:hover::after {
-    transform: scale(1);
 }
 
 .header-active-href::after {
@@ -211,7 +208,6 @@ ul {
 }
 
 .benefits {
-    max-width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
