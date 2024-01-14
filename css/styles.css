@@ -377,8 +377,13 @@ ul {
     background: #FFF;
 }
 
+.portfolio-list-item:hover {
+    cursor: pointer;
+}
+
 .portfolio-img-container {
     position: relative;
+    overflow: hidden;
 }
 
 .portfolio-img-cover {
@@ -389,6 +394,12 @@ ul {
     height: 100%;
     background: #4D5AE5;
     padding: 40px 32px;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+}
+
+.portfolio-list-item:hover .portfolio-img-cover {
+    transform: translateX(0);
 }
 
 .portfolio-cover-text {
