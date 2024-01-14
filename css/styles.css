@@ -50,8 +50,10 @@ ul {
 }
 
 .header {
+    max-width: 1440px;
     border-bottom: 1px solid #E7E9FC;
     background: #FFF;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -102,6 +104,11 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.32px;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-active-href {
+    color: #404bbf;
 }
 
 .header-nav-href::after {
@@ -109,7 +116,7 @@ ul {
     display: block;
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -1px;
     width: 100%;
     transform: scale(0);
     height: 4px;
@@ -119,6 +126,10 @@ ul {
 }
 
 .header-nav-href:hover::after {
+    transform: scale(1);
+}
+
+.header-active-href::after {
     transform: scale(1);
 }
 
@@ -148,9 +159,11 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solution {
+    max-width: 1440px;
     padding: 188px 0;
     background-color: rgba(46, 47, 66, 0.70);
     background-image: 
@@ -190,6 +203,7 @@ ul {
     padding: 16px 32px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solution-button:hover, .solution-button:focus {
@@ -197,6 +211,7 @@ ul {
 }
 
 .benefits {
+    max-width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -210,6 +225,23 @@ ul {
 .benefits-list-item {
     width: calc((100% - 3 * 24px) / 4);
     flex-shrink: 0;
+}
+
+.benefits-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 24px 0;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+}
+
+.benefits-icon {
+    width: 64px;
+    height: 64px;
 }
 
 .benefits-content-title {
